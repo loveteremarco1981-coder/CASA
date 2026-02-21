@@ -1,51 +1,19 @@
-<!doctype html>
-<html lang="it">
-<head>
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
-<title>Casa</title>
-<link rel="stylesheet" href="style.css?v=5">
-</head>
-<body>
-<header class="topbar"><div class="left"><span class="logo"></span><b>Casa</b></div><div class="right"><span id="weather-pill" class="pill">—°C · <span id="windKmh">—</span> km/h</span></div></header>
-<div id="stateBanner" class="banner">SECURITY DAY</div>
-<main>
-  <section class="wrap">
-    <h2 class="h">Dashboard</h2>
-    <div class="grid4">
-      <article class="card">
-        <div class="ico"><img src="icons/thermo.svg" alt></div>
-        <div class="label">Temperatura</div>
-        <div class="value"><span id="tempValue">—</span> °C</div>
-      </article>
-      <article class="card">
-        <div class="ico"><img src="icons/humidity.svg" alt></div>
-        <div class="label">Umidità</div>
-        <div class="value"><span id="humValue">—</span> %</div>
-      </article>
-      <article class="card">
-        <div class="ico"><img src="icons/people.svg" alt></div>
-        <div class="label">Persone</div>
-        <div class="value"><span id="peopleOnline">—</span> · <span id="houseStatus">—</span></div>
-      </article>
-      <article class="card">
-        <div class="ico"><img src="icons/bolt.svg" alt></div>
-        <div class="label">Energy</div>
-        <div class="value"><span id="energyKwh">—</span> kWh</div>
-      </article>
-    </div>
-
-    <h3 class="h2">Preferiti</h3>
-    <section id="favoritesGrid" class="fav-grid"></section>
-
-    <h3 class="h2">Persone</h3>
-    <div id="peopleChips" class="chips"></div>
-
+<!doctype html><html lang="it"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/><title>Casa · Classic</title><link rel="stylesheet" href="style.css?v=classic"></head><body>
+<header class="bar"><div class="l">Casa</div><div class="r"><span id="pill">—°C · — km/h</span></div></header>
+<div id="banner" class="banner">SECURITY DAY</div>
+<main class="wrap">
+  <h2>Dashboard</h2>
+  <section class="grid">
+    <article class="card"><div class="ico"></div><div class="label">Temperatura</div><div class="value"><b id="temp">—</b> °C</div></article>
+    <article class="card"><div class="ico"></div><div class="label">Umidità</div><div class="value"><b id="hum">—</b> %</div></article>
+    <article class="card"><div class="ico"></div><div class="label">Persone</div><div class="value"><b id="ppl">—</b> · <span id="day">—</span></div></article>
+    <article class="card"><div class="ico"></div><div class="label">Energy</div><div class="value"><b id="kwh">—</b> kWh</div></article>
   </section>
+
+  <h3>Preferiti</h3>
+  <div id="fav" class="fav"></div>
+
+  <h3>Persone</h3>
+  <div id="chips" class="chips"></div>
 </main>
-<script src="config.js?v=5"></script>
-<script src="helpers.js?v=5"></script>
-<script src="app.js?v=5"></script>
-<script src="people.chips.js?v=5"></script>
-</body>
-</html>
+<script src="config.js?v=classic"></script><script src="classic.js?v=classic"></script></body></html>
