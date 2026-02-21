@@ -1,0 +1,1 @@
+(function(){const b=document.getElementById('stateBanner');const t=b.textContent;if(t.includes('COMFY')) document.body.classList.add('comfy'); else document.body.classList.add('security');})();

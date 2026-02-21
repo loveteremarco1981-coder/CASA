@@ -1,0 +1,1 @@
+window.JSONP=window.JSONP||{};(function(){const o=window.JSONP.fetch;window.JSONP.fetch=function(u){u=u||(window.CONFIG&&window.CONFIG.DOGET_URL);if(!u) return Promise.reject('no url');if(o) return o(u);return fetch(u).then(r=>r.json());};})();

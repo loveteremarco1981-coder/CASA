@@ -1,0 +1,1 @@
+.people-chips{display:flex;gap:10px;flex-wrap:wrap}.person-chip{background:rgba(0,0,0,.25);padding:8px 12px;border-radius:999px;color:#fff;display:flex;gap:8px}.person-dot{width:10px;height:10px;border-radius:50%;background:#666}.person-dot.in{background:#22c55e}.person-dot.out{background:#ef4444}
